@@ -20,7 +20,7 @@ public class CalculatorLoggingAspect {
         log.info("The method {}() begins with {}", joinPoint.getSignature().getName(), Arrays.toString(joinPoint.getArgs()));
         try {
             Object result = joinPoint.proceed();
-            log.info("The method {}() ends with ", joinPoint.getSignature().getName(), result);
+            log.info("The method {}() ends with {}", joinPoint.getSignature().getName(), result);
             return result;
         } catch (IllegalArgumentException e) {
             log.error("Illegal argument {} in {}()", Arrays.toString(joinPoint.getArgs()) , joinPoint.getSignature().getName());
