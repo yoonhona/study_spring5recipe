@@ -4,15 +4,13 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-public class CalculatorValidationAspect implements Ordered {
-
-    public int getOrder() {
-        return 1;
-    }
+@Order(1)
+public class CalculatorValidationAspect{
 
     @Before("execution(* *.*(double, double))")
     public void validateBefore(JoinPoint joinPoint) {
