@@ -17,6 +17,7 @@ public class Main {
         arithmeticCalculator.sub(4, 3);
         arithmeticCalculator.mul(2, 3);
         arithmeticCalculator.div(4, 2);
+        arithmeticCalculator.div(4, 0);
 
         UnitCalculator unitCalculator = context.getBean("unitCalculator", UnitCalculator.class);
         unitCalculator.kilogramToPound(10);
