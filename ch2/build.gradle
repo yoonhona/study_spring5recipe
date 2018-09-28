@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'nyh'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.springframework', name: 'spring-core', version: '5.0.9.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '5.0.9.RELEASE'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+
+    compile group: 'org.aspectj', name: 'aspectjrt', version: '1.9.1'
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.1'
+
+}
