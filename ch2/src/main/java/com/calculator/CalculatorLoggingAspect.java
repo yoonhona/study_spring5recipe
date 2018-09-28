@@ -15,23 +15,20 @@ public class CalculatorLoggingAspect {
 
     private Logger log = LoggerFactory.getLogger(this.getClass());
 
-    @Pointcut("execution(* *.*(..))")
-    private void loggingOperation() { }
-
-    @Before("loggingOperation()")
+    @Before("CalculatorPointcuts.loggingOperation()")
     public void logBefore(JoinPoint joinPoint) {
         log.info("The method " + joinPoint.getSignature().getName()
                 + "() begins with " + Arrays.toString(joinPoint.getArgs()));
     }
 
-    @After("loggingOperation()")
+    @After("CalculatorPointcuts.loggingOperation()")
     public void logAfter(JoinPoint joinPoint) {
         log.info("The method " + joinPoint.getSignature().getName()
                 + "() ends");
     }
 
     @AfterReturning(
-            pointcut = "loggingOperation()",
+            pointcut = "CalculatorPointcuts.loggingOperation()",
             returning = "result")
     public void logAfterReturning(JoinPoint joinPoint, Object result) {
         log.info("The method " + joinPoint.getSignature().getName()
@@ -39,14 +36,14 @@ public class CalculatorLoggingAspect {
     }
 
     @AfterThrowing(
-            pointcut = "loggingOperation()",
+            pointcut = "CalculatorPointcuts.loggingOperation()",
             throwing = "e")
     public void logAfterThrowing(JoinPoint joinPoint, IllegalArgumentException e) {
         log.error("Illegal argument " + Arrays.toString(joinPoint.getArgs())
                 + " in " + joinPoint.getSignature().getName() + "()");
     }
 
-    @Around("loggingOperation()")
+    @Around("CalculatorPointcuts.loggingOperation()")
     public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
         log.info("The method " + joinPoint.getSignature().getName()
                 + "() begins with " + Arrays.toString(joinPoint.getArgs()));
