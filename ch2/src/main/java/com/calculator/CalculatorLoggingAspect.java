@@ -7,20 +7,22 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-public class CalculatorLoggingAspect {
+public class CalculatorLoggingAspect implements Ordered {
+
     private Logger log = LoggerFactory.getLogger(this.getClass());
+
+    public int getOrder() {
+        return 0;
+    }
+
     @Before("execution(* *.*(..))")
-    public void logJoinPoint(JoinPoint joinPoint) {
-        log.info("Join point kind : {}", joinPoint.getKind());
-        log.info("Signature declaring type : {}", joinPoint.getSignature().getDeclaringTypeName());
-        log.info("Signature name : {}", joinPoint.getSignature().getName());
-        log.info("Arguments : {}", Arrays.toString(joinPoint.getArgs()));
-        log.info("Target class : {}", joinPoint.getTarget().getClass().getName());
-        log.info("This class : {}", joinPoint.getThis().getClass().getName());
+    public void logBefore(JoinPoint joinPoint) {
+        log.info("The method {}() begins with {}", joinPoint.getSignature().getName() ,Arrays.toString(joinPoint.getArgs()));
     }
 }
 

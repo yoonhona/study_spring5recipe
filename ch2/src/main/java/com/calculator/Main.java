@@ -13,7 +13,7 @@ public class Main {
 
         ArithmeticCalculator arithmeticCalculator =
                 context.getBean("arithmeticCalculator", ArithmeticCalculator.class);
-        arithmeticCalculator.add(1, 2);
+        arithmeticCalculator.add(-1, 2);
         arithmeticCalculator.sub(4, 3);
         arithmeticCalculator.mul(2, 3);
         arithmeticCalculator.div(4, 2);
