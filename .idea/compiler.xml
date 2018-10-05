@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="ch2_main" target="1.8" />
       <module name="ch2_test" target="1.8" />
+      <module name="ch3_main" target="1.8" />
+      <module name="ch3_test" target="1.8" />
       <module name="com.nyh-ch2_main" target="1.8" />
       <module name="com.nyh-ch2_test" target="1.8" />
     </bytecodeTargetLevel>
