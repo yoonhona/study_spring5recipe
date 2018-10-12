@@ -1,0 +1,45 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : com : ch06-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/ch06/build/libs/exploded/ch06-1.0-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/ch06">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ch06/build/libs/exploded/ch06-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ch06_main/web/Web Gradle : ch06-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ch06_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/ch06/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-twitter:1.1.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-facebook:2.0.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-config:1.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-web:1.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:5.0.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-core:1.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:5.0.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.7" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.7" />
+          <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-crypto:3.2.8.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
+          <element id="library" level="project" name="Gradle: javax.inject:javax.inject:1" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.1.0.RELEASE/f6f76ca7f48f1ab5308c763dedab5a697b3e80ed/spring-security-config-5.1.0.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.0.RELEASE/1ecc3bec04dd43b185c5a0ae6ef8fe5fd0a08ae6/spring-security-core-5.1.0.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.1.0.RELEASE/20a41450e54b544687d1fec565ba2bd7335b050a/spring-context-5.1.0.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.1.0.RELEASE/2e94c3aa0b9d2c0626d8328ff61e166decb33046/spring-aop-5.1.0.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.1.0.RELEASE/8de4fe847e95a87e25acfb7fe5f21c0eddbe94c7/spring-beans-5.1.0.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.1.0.RELEASE/62468cb6d40da37ee6b9c119e39fda5dfb86042/spring-expression-5.1.0.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.1.0.RELEASE/7835804188894b86a39b5a6028d50381638170c6/spring-core-5.1.0.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.1.0.RELEASE/20ee05d41b5bebcab471226517f83447ad3d163c/spring-jcl-5.1.0.RELEASE.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
