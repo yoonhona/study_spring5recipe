@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="ch06_main" target="1.8" />
       <module name="ch06_test" target="1.8" />
+      <module name="ch07_main" target="1.8" />
+      <module name="ch07_test" target="1.8" />
       <module name="ch2_main" target="1.8" />
       <module name="ch2_test" target="1.8" />
       <module name="ch3_main" target="1.8" />
