@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch09" />
+        <module name="ch11" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,12 +18,28 @@
       <module name="ch09" target="1.8" />
       <module name="ch09_main" target="1.8" />
       <module name="ch09_test" target="1.8" />
+      <module name="ch11" target="1.8" />
       <module name="ch2_main" target="1.8" />
       <module name="ch2_test" target="1.8" />
       <module name="ch3_main" target="1.8" />
       <module name="ch3_test" target="1.8" />
+      <module name="com.ch06.main" target="1.8" />
+      <module name="com.ch06.test" target="1.8" />
+      <module name="com.ch07.main" target="1.8" />
+      <module name="com.ch07.test" target="1.8" />
+      <module name="com.ch3.main" target="1.8" />
+      <module name="com.ch3.test" target="1.8" />
+      <module name="com.example.ch09.main" target="1.8" />
+      <module name="com.example.ch09.test" target="1.8" />
       <module name="com.nyh-ch2_main" target="1.8" />
       <module name="com.nyh-ch2_test" target="1.8" />
+      <module name="nyh.ch2.main" target="1.8" />
+      <module name="nyh.ch2.test" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ch11" options="-parameters" />
+    </option>
   </component>
 </project>

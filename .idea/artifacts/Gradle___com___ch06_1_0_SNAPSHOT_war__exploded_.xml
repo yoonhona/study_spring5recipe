@@ -10,34 +10,34 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/ch06/build/libs/exploded/ch06-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="ch06_main/web/Web Gradle : ch06-1.0-SNAPSHOT.war" />
+      <element id="javaee-facet-resources" facet="com.ch06.main/web/Web Gradle : ch06-1.0-SNAPSHOT.war" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="ch06_main" />
+          <element id="module-output" name="com.ch06.main" />
           <element id="dir-copy" path="$PROJECT_DIR$/ch06/out/production/resources" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.1.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.1.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:5.0.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-core:1.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-config:1.1.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-twitter:1.1.2.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-facebook:2.0.3.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-config:1.1.6.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-web:1.1.6.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:5.0.9.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-config:5.1.0.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-core:1.1.6.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-web:5.0.9.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-core:5.1.0.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.1.0.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.1.0.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:5.1.0.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.1.0.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.1.0.RELEASE" />
-          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
-          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.7" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-jcl:5.1.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.1.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.1.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:5.0.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.social:spring-social-web:1.1.6.RELEASE" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.7" />
           <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-crypto:3.2.8.RELEASE" />
-          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.7" />
+          <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-core:5.1.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:5.1.0.RELEASE" />
           <element id="library" level="project" name="Gradle: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
         </element>
       </element>
     </root>
