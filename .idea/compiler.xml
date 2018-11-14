@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ch09" />
         <module name="ch11" />
+        <module name="ch14" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +19,9 @@
       <module name="ch09_main" target="1.8" />
       <module name="ch09_test" target="1.8" />
       <module name="ch11" target="1.8" />
+      <module name="ch14" target="1.8" />
+      <module name="ch14_main" target="1.8" />
+      <module name="ch14_test" target="1.8" />
       <module name="ch2_main" target="1.8" />
       <module name="ch2_test" target="1.8" />
       <module name="ch3_main" target="1.8" />
@@ -31,6 +34,8 @@
       <module name="com.ch3.test" target="1.8" />
       <module name="com.example.ch09.main" target="1.8" />
       <module name="com.example.ch09.test" target="1.8" />
+      <module name="com.example.ch14.main" target="1.8" />
+      <module name="com.example.ch14.test" target="1.8" />
       <module name="com.nyh-ch2_main" target="1.8" />
       <module name="com.nyh-ch2_test" target="1.8" />
       <module name="nyh.ch2.main" target="1.8" />
@@ -40,6 +45,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ch11" options="-parameters" />
+      <module name="ch14" options="-parameters" />
     </option>
   </component>
 </project>
